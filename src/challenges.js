@@ -16,7 +16,7 @@ function calcArea(triangleBase, triangleHeight) {
 // Desafio 3
 function splitSentence(str) {
   // seu código aqui
-  return str.split(" ");
+  return str.split(' ');
 }
 
 // Desafio 4
@@ -24,7 +24,7 @@ function concatName(arr) {
   // seu código aqui
   let nameFirst = arr[0];
   let nameLast = arr[arr.length - 1];
-  return nameLast + ", " + nameFirst;
+  return `${nameLast}, ${nameFirst}`;
 }
 
 // Desafio 5
@@ -34,13 +34,27 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(arr) {
   // seu código aqui
+  let largest = arr[0];
+  for (let i = 0; i < arr.length; i += 1) {
+    if (largest < arr[i]) {
+      largest = arr[i];
+    }
+  }
+  let highestSum = 0;
+  for (let i = 0; i < arr.length; i += 1) {
+    if (largest === arr[i]) {
+      highestSum += 1;
+    }
+  }
+  return highestSum;
 }
 
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
+
 }
 
 // Desafio 8
