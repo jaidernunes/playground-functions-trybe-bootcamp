@@ -10,14 +10,15 @@ function compareTrue(var1, var2) {
 // Desafio 2
 function calcArea(triangleBase, triangleHeight) {
   // seu código aqui
-  return (triangleBase * triangleHeight) / 2
+  return (triangleBase * triangleHeight) / 2;
 }
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(str) {
   // seu código aqui
+  return str.split(" ");
 }
-
+  
 // Desafio 4
 function concatName() {
   // seu código aqui
