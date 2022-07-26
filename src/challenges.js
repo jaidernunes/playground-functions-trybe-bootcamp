@@ -1,6 +1,10 @@
-// Desafio 1
-function compareTrue() {
+// Challenge 1 - Create a function using the operator &&:
+function compareTrue(var1, var2) {
   // seu código aqui
+  if (var1 === true && var2 === true) {
+    return true;
+  }
+  return false;
 }
 
 // Desafio 2
