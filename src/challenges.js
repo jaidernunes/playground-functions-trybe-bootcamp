@@ -18,10 +18,13 @@ function splitSentence(str) {
   // seu código aqui
   return str.split(" ");
 }
-  
+
 // Desafio 4
-function concatName() {
+function concatName(arr) {
   // seu código aqui
+  let nameFirst = arr[0];
+  let nameLast = arr[arr.length - 1];
+  return nameLast + ", " + nameFirst;
 }
 
 // Desafio 5
