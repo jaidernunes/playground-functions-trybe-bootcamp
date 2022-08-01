@@ -13,7 +13,8 @@ function generatePhoneNumber(arr) {
       }
     if (index > 9 || index < 0 || repeats >= 3) {
       return ('não é possível gerar um número de telefone com esses valores');
-    } else { repeats = 0;}
+    } 
+    else { repeats = 0;}
   }
   phoneNumber = '(' + arr[0] + arr[1] + ') ' + arr[2] + arr[3] + arr[4] + arr[5] + arr[6] + '-' + arr[7] + arr[8] + arr[9] + arr[10];
   return (phoneNumber)
@@ -33,8 +34,18 @@ function triangleCheck(lineA, lineB, lineC) {
   }
 
 // Desafio 13
-function hydrate() {
+function hydrate(str) {
   // seu código aqui
+  let drinksStr = str.match(/\d+/g);
+  let sumDrinks = 0;
+  for (i = 0; i < drinksStr.length; i +=1) {
+      sumDrinks += parseInt(drinksStr[i])
+  }
+  if (sumDrinks === 1) {
+    return(sumDrinks + ' copo de água')
+  } else {
+  return(sumDrinks + ' copos de água')
+  }
 }
 
 module.exports = {
