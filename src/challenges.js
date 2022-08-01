@@ -129,9 +129,19 @@ function decode(phraseDecode) {
 }
 
 // Desafio 10
-function techList() {
+function techList(arr, name) {
   // seu código aqui
-}
+  let returnedArray = [];
+  arr.sort();
+  if (arr.length > 0) {
+    for (let i in arr) {
+      returnedArray.push({ tech: arr[i], name });
+    }
+    return (returnedArray);
+  } else {
+    return ('Vazio!');
+  }
+}   
 
 module.exports = {
   calcArea,
