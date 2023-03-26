@@ -31,7 +31,7 @@ function triangleCheck(lineA, lineB, lineC) {
     return (false);
   }
     return (true);
-  }
+}
 
 // Desafio 13
 function hydrate(str) {
